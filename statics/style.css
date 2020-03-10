@@ -6,13 +6,18 @@
 
 body {
     background-color: #ECECEC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    outline: none;
 }
 
 header {
     background-color: #0F7398;
 }
 
-header > #header_contents {
+#header_contents {
     width: 100%;
     height: 102px;
     display: flex;
@@ -21,7 +26,7 @@ header > #header_contents {
     color: #FFFFFF;
 }
 
-#serrch_bar_section > #input input {
+#input input {
     border: 0px solid #0F7398;
     border-radius: 4px;
     background-color: #E6E6E6;
@@ -61,14 +66,15 @@ main {
     display: flex;
     justify-content: space-around;
     background-color: rgba(243, 243, 243, 0.81) !important;
-    background-image: url("../images/Group 5.svg");
+    background-image: url("../images/Group 11.svg");
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50%;
+    background-position: center;
     width: 100%;
     height: 86.5vh;
 }
+
 
 #circle_float {
     display: flex;
@@ -95,4 +101,70 @@ main {
 
 #circle_text {
     color: #0F7398;
+}
+
+#modal_flex {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 35%;
+    left: 30%;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: auto;
+    height: auto;
+    box-shadow:  0 0 3px #333;
+    border-radius: 1%;
+}
+
+#modal_flex > h3, #modal_buttons {
+    margin-top: 16px;
+}
+
+#modal_input_text {
+    margin: 16px;
+}
+
+#modal_input_text > input {
+    border: 0px solid #0F7398;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    width: 536px;
+    height: 38px;
+    padding: 12px 12px 12px 18px;
+    font-size: 22px;
+    box-shadow:  0 0 3px #333;
+}
+
+#modal_buttons {
+    margin-bottom: 16px;
+}
+
+#modal_buttons button {
+    box-shadow:  0 0 3px #333;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 7px;
+    font-weight: bold;
+}
+
+#modal_buttons button:focus {
+    outline: none;
+}
+
+#modal_buttons button:hover {
+    cursor: pointer;
+}
+
+#modal_buttons button:nth-child(1) {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+}
+
+#modal_buttons button:nth-child(2) {
+    background-color: #0F7398;
+    border: 1px solid #0F7398;
+    color: #FFFFFF;
 }
