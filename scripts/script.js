@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
     })
     
     document.querySelector("#modal_buttons button:nth-child(1)").addEventListener("click", function() {
+        document.querySelector("#modal_input_text > input").value = "";
         modal_flex.style.visibility = "hidden";
     })
 });
